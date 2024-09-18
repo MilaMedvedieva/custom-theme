@@ -1,0 +1,26 @@
+.swiper{
+  .swiper-prev, .swiper-next{
+    cursor: pointer;
+    display: block;
+    z-index: 5;
+  }
+  .swiper-pagination-bullet {
+    @apply bg-light-100 w-[0.75rem] h-[0.75rem] opacity-100;
+    &.swiper-pagination-bullet-active{
+      @apply bg-red-100;
+    }
+  }
+  .swiper-pagination{
+    bottom: 2rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+}
